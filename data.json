@@ -33,7 +33,7 @@
 	},
 	{
 		"id": 5,
-		"coverPageUrl": "previews/duck.png",
+		"coverPageUrl": "previews/duck.jpg",
 		"createdDate": "2018-09-30T20:34:42+07:00",
 		"directory": "duck",
 		"enabled": true,
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": 6,
-		"coverPageUrl": "previews/flyDragon.png",
+		"coverPageUrl": "previews/flyDragon.jpg",
 		"createdDate": "2018-09-30T20:34:42+07:00",
 		"directory": "flyDragon",
 		"enabled": true,
