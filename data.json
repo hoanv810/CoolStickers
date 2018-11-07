@@ -112,14 +112,6 @@
 		"title": "QooBee Office"
 	},
 	{
-		"id": 14,
-		"coverPageUrl": "previews/duck.png",
-		"createdDate": "2018-10-01T08:21:48+07:00",
-		"directory": "duck",
-		"enabled": true,
-		"title": "Duck"
-	},
-	{
 		"id": 15,
 		"coverPageUrl": "previews/monkeyBunny1.png",
 		"createdDate": "2018-10-01T15:42:02+07:00",
