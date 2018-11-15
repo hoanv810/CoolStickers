@@ -246,5 +246,29 @@
 		"directory": "doraemonSecretGadgets",
 		"enabled": true,
 		"title": "Doraemon's Secret Gadgets"
+	},
+	{
+		"id": 32,
+		"coverPageUrl": "https://imgur.com/V6Jssyq.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemonTheAdventure",
+		"enabled": true,
+		"title": "Doraemon the Adventure"
+	},
+	{
+		"id": 33,
+		"coverPageUrl": "https://imgur.com/SSDubqQ.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemonOnTheJob",
+		"enabled": true,
+		"title": "Doraemon on the Job"
+	},
+	{
+		"id": 34,
+		"coverPageUrl": "https://imgur.com/sJvIdK1.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemonManyEmotions",
+		"enabled": true,
+		"title": "Doraemon's Moving Summer Vacation"
 	}
 ]
