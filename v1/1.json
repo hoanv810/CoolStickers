@@ -158,5 +158,13 @@
 		"directory": "lineCharacterMaximumReaction",
 		"enabled": true,
 		"title": "LINE Characters: Maximum Reaction"
+	},
+	{
+		"id": 21,
+		"coverPageUrl": "https://imgur.com/Jh997TG",
+		"createdDate": "2018-11-15T10:30:33+07:00",
+		"directory": "moonMadAngry",
+		"enabled": true,
+		"title": "Moon: Mad Angry "
 	}
 ]
