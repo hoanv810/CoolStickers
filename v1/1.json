@@ -222,5 +222,29 @@
 		"directory": "moonHighSchoolMemory",
 		"enabled": true,
 		"title": "Moon: High School Memories"
+	},
+	{
+		"id": 29,
+		"coverPageUrl": "https://imgur.com/lfJ4Gpk.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemon",
+		"enabled": true,
+		"title": "Doraemon"
+	},
+	{
+		"id": 30,
+		"coverPageUrl": "https://imgur.com/EKNL7Sv.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemonManyEmotions",
+		"enabled": true,
+		"title": "Doraemon's Many Emotions"
+	},
+	{
+		"id": 31,
+		"coverPageUrl": "https://imgur.com/jXBdCzo.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "doraemonSecretGadgets",
+		"enabled": true,
+		"title": "Doraemon's Secret Gadgets"
 	}
 ]
