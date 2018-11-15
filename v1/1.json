@@ -166,5 +166,61 @@
 		"directory": "moonMadAngry",
 		"enabled": true,
 		"title": "Moon: Mad Angry "
+	},
+	{
+		"id": 22,
+		"coverPageUrl": "https://imgur.com/EJYgqVU.png",
+		"createdDate": "2018-11-15T10:30:33+07:00",
+		"directory": "moonJobHuntingStory",
+		"enabled": true,
+		"title": "Moon's Job Hunting Story"
+	},
+	{
+		"id": 23,
+		"coverPageUrl": "https://imgur.com/SAHFY5C.png",
+		"createdDate": "2018-11-15T10:30:33+07:00",
+		"directory": "moonDietingSpecial",
+		"enabled": true,
+		"title": "Moon's Dieting Special"
+	},
+	{
+		"id": 24,
+		"coverPageUrl": "https://imgur.com/WR37F9J.png",
+		"createdDate": "2018-11-15T10:30:33+07:00",
+		"directory": "brownConySecretDate",
+		"enabled": true,
+		"title": "Brown & Cony's Secret Date"
+	},
+	{
+		"id": 25,
+		"coverPageUrl": "https://imgur.com/1jji6fu.png",
+		"createdDate": "2018-11-15T10:30:33+07:00",
+		"directory": "brownConyWinterDate",
+		"enabled": true,
+		"title": "Brown & Cony's Cozy Winter Date"
+	},
+	{
+		"id": 26,
+		"coverPageUrl": "https://imgur.com/ogLaVSp.png",
+		"createdDate": "2018-11-15T16:41:50+07:00",
+		"directory": "moonSalaryMan",
+		"enabled": true,
+		"title": "Moon: Salaryman Special"
+	},
+	{
+		"id": 27,
+		"coverPageUrl": "https://imgur.com/IhdUXcZ.png",
+		"createdDate": "2018-11-15T16:41:50+07:00",
+		"directory": "moonOfficeWorker",
+		"enabled": true,
+		"title": "Moon's Battle as an Office Worker"
+	},
+	{
+		"id": 28,
+		"coverPageUrl": "https://imgur.com/npCmwIh.png",
+		"createdDate": "2018-11-15T16:41:50+07:00",
+		"directory": "moonHighSchoolMemory",
+		"enabled": true,
+		"title": "Moon: High School Memories"
 	}
 ]
