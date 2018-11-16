@@ -278,5 +278,37 @@
 		"directory": "aladdin",
 		"enabled": true,
 		"title": "Aladdin"
+	},
+	{
+		"id": 36,
+		"coverPageUrl": "https://imgur.com/LYC4T4x.png",
+		"createdDate": "2018-11-16T14:28:22+07:00",
+		"directory": "lineCharacterHappyVacations",
+		"enabled": true,
+		"title": "LINE Characters - Happy Vacations"
+	},
+	{
+		"id": 37,
+		"coverPageUrl": "https://imgur.com/0fWiSNB.png",
+		"createdDate": "2018-11-16T14:28:22+07:00",
+		"directory": "stitch",
+		"enabled": true,
+		"title": "Stitch"
+	},
+	{
+		"id": 38,
+		"coverPageUrl": "https://imgur.com/xb9aDw9.png",
+		"createdDate": "2018-11-16T14:28:22+07:00",
+		"directory": "stitchReturns",
+		"enabled": true,
+		"title": "Stitch Returns"
+	},
+	{
+		"id": 39,
+		"coverPageUrl": "https://imgur.com/af5tzSh.png",
+		"createdDate": "2018-11-16T14:28:22+07:00",
+		"directory": "stitchAnimatedStickers",
+		"enabled": true,
+		"title": "Stitch: Animated Stickers"
 	}
 ]
