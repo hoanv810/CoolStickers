@@ -270,5 +270,13 @@
 		"directory": "doraemonManyEmotions",
 		"enabled": true,
 		"title": "Doraemon's Moving Summer Vacation"
+	},
+	{
+		"id": 35,
+		"coverPageUrl": "https://imgur.com/3j9n8gX.png",
+		"createdDate": "2018-11-16T01:56:12+07:00",
+		"directory": "aladdin",
+		"enabled": true,
+		"title": "Aladdin"
 	}
 ]
