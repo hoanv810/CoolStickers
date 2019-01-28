@@ -310,5 +310,13 @@
 		"directory": "stitchAnimatedStickers",
 		"enabled": true,
 		"title": "Stitch: Animated Stickers"
+	},
+	{
+		"id": 40,
+		"coverPageUrl": "https://imgur.com/D9YuZJ4.png",
+		"createdDate": "2019-01-28T14:28:22+07:00",
+		"directory": "brownConyTet",
+		"enabled": true,
+		"title": "Brown and Cony's Tet"
 	}
 ]
