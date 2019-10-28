@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list_collection"
+            android:icon="@drawable/ic_collections_bookmark"
+            android:orderInCategory="1"
+            android:title="@string/action_all_stickers" />
+
+        <item android:id="@+id/list_manage"
+            android:icon="@drawable/ic_build"
+            android:orderInCategory="2"
+            android:title="@string/label_manage"/>
+
+        <item
+            android:id="@+id/list_archive"
+            android:icon="@drawable/ic_archive"
+            android:orderInCategory="3"
+            android:title="@string/action_archived" />
+
+        <item
+            android:id="@+id/action_rate_app"
+            android:icon="@drawable/ic_grade_black"
+            android:orderInCategory="5"
+            android:title="@string/action_rate_this_app" />
+
+        <item
+            android:id="@+id/action_invite_friends"
+            android:icon="@drawable/ic_group"
+            android:orderInCategory="6"
+            android:title="@string/action_invite_friends" />
+
+    </group>
+</menu>

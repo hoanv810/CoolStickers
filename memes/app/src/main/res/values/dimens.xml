@@ -1,0 +1,36 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_radius">4dp</dimen>
+    <dimen name="button_icon_size">24dp</dimen>
+    
+    <dimen name="control_drawable_size">32dp</dimen>
+    <dimen name="control_radius">8dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="collection_column_width_padding">160dp</dimen>
+    <dimen name="collection_column_width">144dp</dimen>
+
+    <dimen name="dialog_elevation">24dp</dimen>
+    <dimen name="dialog_rounded_corner">8dp</dimen>
+    <dimen name="drawer_elevation">@dimen/spacing_small</dimen>
+
+    <dimen name="fab_button_size">58dp</dimen>
+    <dimen name="fab_margin_right">16dp</dimen>
+
+    <dimen name="icon_column_width">80dp</dimen>
+    <dimen name="icon_size_medium">64dp</dimen>
+
+    <dimen name="list_item_margin">@dimen/spacing_tiny</dimen>
+    <dimen name="list_item_set_margin">88dp</dimen>
+    
+    <dimen name="spacing_huge">48dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_normal">24dp</dimen>
+    <dimen name="spacing_small">16dp</dimen>
+    <dimen name="spacing_tiny">8dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+
+</resources>

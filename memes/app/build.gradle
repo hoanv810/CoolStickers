@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion compileSdk
+
+    defaultConfig {
+        applicationId "github.hoanv810.icon"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode Integer.valueOf(version_code).intValue()
+        versionName version_name
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        resValue "string", "app_name", app_name
+        buildConfigField "String", "APPLICATION_NAME", "\"$app_name\""
+    }
+
+    signingConfigs {
+
+        release {
+            storeFile file("../" + store_file)
+            keyAlias key_alias
+            keyPassword key_password
+            storePassword store_password
+        }
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "meme"
+    productFlavors {
+
+        mock {
+            dimension "meme"
+            buildConfigField "boolean", "ENABLE_ANALYTIC", "false"
+            buildConfigField "String", "COLLECTIONS_URL", "\"https://raw.githubusercontent.com/hoanv810/CoolStickers/feature/axel/v1/1.json\""
+        }
+
+        beta {
+            dimension "meme"
+            buildConfigField "boolean", "ENABLE_ANALYTIC", "true"
+            buildConfigField "String", "COLLECTIONS_URL", "\"https://raw.githubusercontent.com/hoanv810/CoolStickers/feature/axel/v1/1.json\""
+        }
+
+        prod {
+            dimension "meme"
+            buildConfigField "boolean", "ENABLE_ANALYTIC", "true"
+            buildConfigField "String", "COLLECTIONS_URL", "\"https://raw.githubusercontent.com/hoanv810/CoolStickers/master/v1/1.json\""
+        }
+    }
+
+    // Remove mockRelease as it's not needed.
+    android.variantFilter {
+        variant ->
+            if (variant.buildType.name == 'release' && (variant.getFlavors().get(0).name == 'mock' ||
+                    variant.getFlavors().get(0).name == 'beta')) {
+                variant.setIgnore(true)
+            }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test:runner:$testRunner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoCore"
+
+    implementation "androidx.multidex:multidex:$multidex"
+
+    implementation "com.github.castorflex.smoothprogressbar:library-circular:$progress"
+    implementation "com.jakewharton.timber:timber:$timber"
+
+    // Rxjava
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlin"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
+
+    // Glide
+    implementation ("com.github.bumptech.glide:glide:$glide") {
+        transitive = true
+    }
+    kapt "com.github.bumptech.glide:compiler:$glide"
+
+    implementation "com.squareup.okhttp3:okhttp:$okhttp"
+    implementation "com.squareup.okio:okio:$okio"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp"
+
+    // Dagger
+    implementation "com.google.dagger:dagger-android-support:$daggerAndroid"
+    implementation "com.google.dagger:dagger-android:$daggerAndroid"
+    kapt "com.google.dagger:dagger-compiler:$dagger"
+    kapt "com.google.dagger:dagger-android-processor:$dagger"
+
+    // firebase
+    implementation "com.google.firebase:firebase-core:$firebasecore"
+    implementation "com.google.firebase:firebase-firestore:$firestore"
+    implementation "com.google.firebase:firebase-storage:$firebase"
+    implementation "com.google.firebase:firebase-auth:$firebaseauth"
+    implementation "com.firebaseui:firebase-ui-storage:$firebaseui"
+
+    // Crashlytics
+    implementation "com.crashlytics.sdk.android:crashlytics:${firebaseCrashlytics}"
+
+    // EventBus
+    implementation "org.greenrobot:eventbus:$eventBus"
+
+    implementation "com.facebook.stetho:stetho:$stetho"
+    implementation "com.facebook.stetho:stetho-okhttp3:$stetho"
+
+    implementation project(":shared")
+}
+
+apply plugin: 'com.google.gms.google-services'

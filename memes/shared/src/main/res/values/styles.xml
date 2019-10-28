@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="TextAppearance.Shared.Body" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Widget.Shared.TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Shared.Body</item>
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="Widget.Shared.Dialog" parent="@style/Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textViewStyle">@style/Widget.Shared.TextView</item>
+    </style>
+
+</resources>

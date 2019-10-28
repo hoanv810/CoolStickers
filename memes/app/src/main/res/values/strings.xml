@@ -1,0 +1,43 @@
+<resources>
+    <string name="action_all_stickers">All Stickers</string>
+    <string name="action_downloads">Downloaded Stickers</string>
+    <string name="action_about">About</string>
+    <string name="action_rate_this_app">Rate This App</string>
+    <string name="action_invite_friends">Invite Friends</string>
+    <string name="action_edit_sticker">Edit Sticker</string>
+    <string name="action_archived">Archived</string>
+    <string name="action_manage">Manage</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="download_percentage">%d%%</string>
+
+    <string name="number_stickers">%d stickers</string>
+
+    <string name="internal_storage">Internal storage</string>
+
+    <string name="label_retry">Retry</string>
+    <string name="label_collections">Collections</string>
+    <string name="label_manage">Manage</string>
+
+    <string name="message_error_loading_collection">Error Loading Sticker Collections</string>
+    <string name="message_sticker_is_downloading">Sticker is currently downloading.</string>
+    <string name="message_sticker_not_available">Sticker not available</string>
+    <string name="message_failed_to_download_sticker">Failed to download sticker. Check your connection.</string>
+    <string name="message_reorder_sticker_effect">It will take effect on the next start!</string>
+
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="messenger">Messenger</string>
+    <string name="instagram">Instagram</string>
+    <string name="telegram">Telegram</string>
+    <string name="kakaoTalk">KakaoTalk</string>
+
+    <string name="restore">Restore</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="invitation_message">You should install Stickers for Messenger for access to some great icons. Download it from https://play.google.com/store/apps/details?id=github.hoanv810.icon</string>
+
+    <string name="file_provider_authority">com.github.hoanv810.fileprovider</string>
+</resources>

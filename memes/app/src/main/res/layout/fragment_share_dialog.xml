@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Icon.Dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_tiny">
+
+    <github.hoanv810.icon.ui.view.AspectRatioImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:aspectRatio="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:aspectRatioEnabled="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_twitter"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_tiny"
+        android:text="@string/twitter"
+        app:backgroundTint="@color/twitter"
+        app:icon="@drawable/ic_twitter"
+        app:layout_constraintEnd_toEndOf="@id/guide_line"
+        app:layout_constraintStart_toStartOf="@id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_facebook"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_tiny"
+        android:text="@string/facebook"
+        app:backgroundTint="@color/facebook"
+        app:icon="@drawable/ic_facebook"
+        app:layout_constraintEnd_toEndOf="@id/iv_icon"
+        app:layout_constraintStart_toEndOf="@id/guide_line"
+        app:layout_constraintTop_toTopOf="@id/button_twitter" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_whatsapp"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_micro"
+        android:text="@string/whatsapp"
+        app:backgroundTint="@color/whatsapp"
+        app:icon="@drawable/ic_whatsapp"
+        app:layout_constraintEnd_toEndOf="@id/button_twitter"
+        app:layout_constraintStart_toStartOf="@id/button_twitter"
+        app:layout_constraintTop_toBottomOf="@id/button_twitter" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_messenger"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/messenger"
+        app:backgroundTint="@color/messenger"
+        app:icon="@drawable/ic_messenger"
+        app:layout_constraintEnd_toEndOf="@id/button_facebook"
+        app:layout_constraintStart_toStartOf="@id/button_facebook"
+        app:layout_constraintTop_toTopOf="@id/button_whatsapp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_instagram"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_micro"
+        android:text="@string/instagram"
+        app:backgroundTint="@color/instagram"
+        app:icon="@drawable/ic_instagram"
+        app:layout_constraintEnd_toEndOf="@id/button_twitter"
+        app:layout_constraintStart_toStartOf="@id/button_twitter"
+        app:layout_constraintTop_toBottomOf="@id/button_messenger" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_telegram"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/telegram"
+        app:backgroundTint="@color/telegram"
+        app:icon="@drawable/ic_telegram"
+        app:layout_constraintEnd_toEndOf="@id/button_facebook"
+        app:layout_constraintStart_toStartOf="@id/button_facebook"
+        app:layout_constraintTop_toTopOf="@id/button_instagram" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_kakao"
+        style="@style/Widget.SocialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_micro"
+        android:text="@string/kakaoTalk"
+        app:backgroundTint="@color/kakao"
+        app:icon="@drawable/ic_kakao"
+        app:layout_constraintEnd_toEndOf="@id/button_twitter"
+        app:layout_constraintStart_toStartOf="@id/button_twitter"
+        app:layout_constraintTop_toBottomOf="@id/button_instagram" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
