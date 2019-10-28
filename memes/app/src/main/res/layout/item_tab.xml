@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:paddingStart="@dimen/spacing_tiny"
+    android:paddingTop="@dimen/spacing_tiny"
+    android:paddingEnd="@dimen/spacing_tiny"
+    android:paddingBottom="@dimen/spacing_tiny">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_tab"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+</FrameLayout>
+

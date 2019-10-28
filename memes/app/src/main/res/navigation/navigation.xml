@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/list_collection">
+
+    <fragment
+        android:id="@+id/list_collection"
+        android:name="github.hoanv810.icon.ui.collections.SetFragment"
+        android:label="@string/label_collections">
+        <action
+            android:id="@+id/action_list_collection_to_list_archive"
+            app:destination="@id/list_archive" />
+        <action
+            android:id="@+id/action_list_collection_to_list_manage"
+            app:destination="@id/list_manage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/list_archive"
+        android:name="github.hoanv810.icon.ui.archive.ArchiveFragment"
+        android:label="@string/action_archived" />
+
+    <fragment
+        android:id="@+id/list_manage"
+        android:name="github.hoanv810.icon.ui.manage.ManageFragment"
+        android:label="@string/label_manage" />
+</navigation>

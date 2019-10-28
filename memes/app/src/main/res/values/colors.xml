@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccentPressed">#6a8BC34A</color>
+    <color name="colorAccentFocused">#968BC34A</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+
+    <color name="colorAccent">#8BC34A</color>
+
+    <color name="background_tab">#F5F6F7</color>
+    <color name="background_tab_selected">#E1E4E6</color>
+
+    <color name="psts_background_tab_pressed">@color/highlight_light</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+    <color name="highlight_light">#E2E4E6</color>
+    <color name="restore">#5E984B</color>
+
+    <color name="twitter">#5EA0EF</color>
+    <color name="facebook">#5067AE</color>
+    <color name="messenger">#4A83FB</color>
+    <color name="whatsapp">#6EBDA5</color>
+    <color name="instagram">#CA5F4B</color>
+    <color name="telegram">#0088CC</color>
+    <color name="kakao">#F3E336</color>
+
+</resources>

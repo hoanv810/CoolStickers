@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'maven-publish'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test:runner:$testRunner"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoCore"
+
+    api "androidx.appcompat:appcompat:$appcompat"
+    api "androidx.core:core-ktx:$corektx"
+    api "androidx.constraintlayout:constraintlayout:$constraintLayout"
+    api "com.google.android.material:material:$material"
+    api "android.arch.navigation:navigation-fragment-ktx:$navigation"
+    api "android.arch.navigation:navigation-ui-ktx:$navigation"
+
+    // Dagger
+    implementation "com.google.dagger:dagger-android-support:$daggerAndroid"
+    implementation "com.google.dagger:dagger-android:$daggerAndroid"
+    kapt "com.google.dagger:dagger-compiler:${dagger}"
+    kapt "com.google.dagger:dagger-android-processor:${dagger}"
+
+    // lifecycle
+    api "androidx.lifecycle:lifecycle-extensions:$lifecycle"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle"
+}
+
+def artifactId = 'commons'
+def groupId = 'github.hoanv810.shared'
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            library(MavenPublication) {
+                setGroupId(groupId)
+                setArtifactId(artifactId)
+                version android.defaultConfig.versionName
+
+                artifact(bundleReleaseAar)
+            }
+        }
+    }
+}
