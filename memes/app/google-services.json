@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "30893769483",
+    "firebase_url": "https://iconstore-c0d06.firebaseio.com",
+    "project_id": "iconstore-c0d06",
+    "storage_bucket": "iconstore-c0d06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30893769483:android:288f82da036179e2",
+        "android_client_info": {
+          "package_name": "github.hoanv810.icon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30893769483-flq99a0b2i36vbvrs9vepuql1e8jn63m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP_F65IES56NknJeik7iKOZ_A06k08Bhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30893769483:android:5a584fb5b2cc119a",
+        "android_client_info": {
+          "package_name": "github.hoanv810.icon.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30893769483-flq99a0b2i36vbvrs9vepuql1e8jn63m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP_F65IES56NknJeik7iKOZ_A06k08Bhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
